@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My blog</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+    <div class="login" id="main">
+        <div class="login-container">
+            <h2>Login</h2>
+            <div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Login</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================ -->
+    <div  class="myblog">
+
+        <header style="background-color: rgb(106, 8, 8);">
+            <nav>
+                <ul>
+                    <li><a href="pages/blog/blog.html">Home</a></li>
+                    <li><a href="pages/blog/blog.html">Blog</a></li>
+                    <li><a id="logOut" href="">Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div  class="notify" id="main2">
+            <!-- <h1 style="text-align: center;">My Blog</h1> -->
+            <div class="blog-upload-container">
+                <h2>Upload Your Blog</h2>
+                <div>
+                    <div class="input-group">
+                        <label for="title">Blog Title</label>
+                        <input type="text" id="title" name="title" placeholder="Enter your blog title" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="content">Blog Content</label>
+                        <textarea id="content" name="content" rows="10" placeholder="Write your blog content here..."
+                            required></textarea>
+                    </div>
+                    <!-- <div class="input-group">
+                        <label for="image-upload" class="custom-file-upload">
+                            Upload Image
+                        </label>
+                        <input id="image_upload" type="file" name="image-upload" accept="image/*" />
+                        <span id="file-name">No image chosen</span>
+                    </div> -->
+                    <button id="post_btn" type="submit">Upload Blog</button>
+                    <button  class="edite_btn" type="submit">Update Blog</button>
+                </div>
+            </div>
+            
+
+        </div>
+        <!-- ======= posts -->
+        <div class="my_posts">
+            <h2>My Posts</h1>
+            <table>
+    
+            </table>
+    
+         </div>
+        
+    </div>
+
+   
+
+    <!-- -===================== -->
+
+
+    <div class="wrapper">
+        <div class="content">
+            <!-- Main content goes here -->
+        </div>
+        <footer class="footer">
+            <!-- Footer content goes here -->
+            © 2024 Your Website. All rights reserved.
+        </footer>
+    </div>
+
+
+
+
+    <script type="module" src="js/app.js"></script>
+</body>
+
+</html>

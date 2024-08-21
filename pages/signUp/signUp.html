@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My blog</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+
+
+</head>
+
+<body>
+
+  
+    <div class="single_post">
+
+        <header  style="background-color: rgb(106, 8, 8);">
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a id="login" href="../../index.html">Login</a></li>
+                    <li><a id="signUp" href="../signUp/signUp.html">SignUp</a></li>
+                </ul>
+            </nav>
+        </header>
+       
+
+        <div class="signUp" id="main">
+            <div class="login-container">
+                <h2>SignUp</h2>
+                <div>
+                    <div class="input-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button onclick="signupUser()" type="submit">SignUp</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+      
+
+
+<footer>
+<div class="footer_text">
+    <p>Copy Right Text Anas raza</p>
+
+</div>
+</footer>
+ 
+
+
+
+
+<script type="module" src="../signUp/signUp.js"></script>
+</body>
+
+</html>

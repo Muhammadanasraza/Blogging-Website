@@ -1,0 +1,324 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    height: 100%;
+}
+body{
+    counter-reset: section; 
+    position: relative;
+    margin: 0;
+}
+
+
+
+#main{
+    height: 100vh;
+}
+.login-container {
+    width: 400px;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #333;
+}
+/* 
+button */
+.edite_btn{
+    display: none;
+}
+#post_btn{
+    margin-bottom: 5px;
+}
+
+/* 
+button */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+
+
+/* ============================== */
+
+header{
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 8px 0px;
+    text-align: center;
+
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0px 10px;
+}
+header ul li a{
+    color: white;
+    text-decoration: none;
+}
+/* ============================== */
+.myblog{
+    display: none;
+}
+
+
+#main2{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+#main2{
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #4cae4c;
+    color: aliceblue;
+    margin-top: 5px;
+    font-weight: bold;
+}
+/* main2 */
+.notify{
+    display: inline;
+}
+.blog-upload-container {
+    width: 30%;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.input-group input[type="text"],
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #333;
+}
+
+.input-group textarea {
+    resize: vertical;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #5cb85c;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.custom-file-upload:hover {
+    background-color: #4cae4c;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+#file-name {
+    display: block;
+    margin-top: 10px;
+    color: #777;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* ======================== */
+
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+
+/* post */
+.my_posts{
+    width: 100%;
+    margin: 40px auto;
+    padding: 40px 0px;
+     
+    margin-top: 40%;
+}
+.my_posts h2{
+    text-align: center;
+
+}
+.my_posts table{
+    width: 50%;
+    margin: 50px auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 30px;
+
+}
+
+.my_posts table tr{
+    margin: 30px 0px;
+    width: 50%;
+
+}
+
+.my_posts table tr button.delete{
+    background-color: rgb(106, 8, 8);
+}
+
+.my_posts table tr button.edite{
+    background-color: rgb(8, 67, 106);
+}
+
+.my_posts table tr button:hover{
+    background: transparent;
+    color: #111;
+}
+
+.post_number{
+    height: 20px;
+    display: inline-block;
+    width: 20px;
+}
+
+.post_number::before{
+ counter-increment: section;
+ content: counter(section);
+}
+
+
+#main{
+width: 70%;
+margin: 0 auto;
+padding: 60px 0px;
+
+}
+.post{
+    margin: 20px 0;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 20px;
+}
+.post h2{
+   color: rgb(106, 8, 8);
+}
+.post h2{
+    padding: 10px 0;
+}
+
+
+/* footer */
+ 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+/* Main content area */
+.content {
+    flex: 1;
+}
+
+/* Footer styling */
+.footer {
+    background-color: rgb(106, 8, 8);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%; /* Ensures the footer spans the full width of the page */
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+/* footer */
